@@ -21,7 +21,7 @@ body {
 }
 
 .sub-heading-title {
-	padding: 6em 0 2em 0;
+	padding: 4em 0 2em 0;
 }
 
 .vertical-padding {
@@ -589,7 +589,8 @@ p {
 }
 
 .schedule{
-  margin-top: 20px;
+  margin: 20px;
+
 }
 
 .table th {
@@ -598,15 +599,12 @@ p {
   
 }
 
-.table td {
-  
-}
 
 .table tbody tr td {
   vertical-align: middle;
   font-weight: 900;
   font-size: 1.0rem;
-  width: 180px;
+  width: 300px;
 }
 
 .schedule header div {
@@ -654,7 +652,7 @@ p {
 }
 
 .sponsor-tier {
-  color: #;
+  color: #fff;
 }
 
 .sponsor-img-container {
