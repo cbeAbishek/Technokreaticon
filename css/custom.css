@@ -105,13 +105,13 @@ header, section {
 }
 
 .top-borders {
-  border-top-right-radius: 3em;
-  border-top-left-radius: 3em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
 }
 
 .bottom-borders {
-  border-bottom-right-radius: 3em;
-  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
 }
 
 .workshop-item {
@@ -267,15 +267,27 @@ header, section {
 	width:10%;
 	z-index:10000
 }
-
+@keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-30px);} 
+  60% {transform: translateY(-15px);} 
+}
+@-webkit-keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+  40% {-webkit-transform: translateY(-30px);} 
+  60% {-webkit-transform: translateY(-15px);} 
+} 
 
 /* ---- Mobile only styling ---- */
-@media (max-width: 991.98px) {
-	.masthead h1,
-.title-text {
+@media (max-width: 990px) {
+  .diagonal-section .nexa {
+    font-size: 35px;
+    text-align: left;
+  }
+	.masthead .title-text {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
-  font-size: 90px;
+  font-size: 100px;
   text-align: center;
   opacity: 1;
   background: url("../img/title-scrolling.png");
@@ -284,9 +296,30 @@ header, section {
   -webkit-text-fill-color: transparent;
   animation: animate 150s linear infinite;
 }
+.text-center .sub-heading-title{
+  padding-top: 15px;
+}
+.masthead .sub-heading{
+  font-size: 50px;
+  
+}
+.event .sub-heading-title{
+  font-size: 50px;
+}
+
+.schedule h3{
+  font-size: 50px;
+}
+
+.diagonal-section-content .sub{
+  font-size: 50px;
+}
 .diagonal-text{
   padding-top: 0%;
   font-weight: bolder;
+  font-size: 40px;
+  -webkit-animation-name: bounce;
+  animation-name: bounce; 
 }
   .navbar-toggler {
 		margin-right: 4em!important;
@@ -298,6 +331,7 @@ header, section {
   #navbar-container,
   #navbar-top-menu {
     width: 100%;
+    padding: 0px;
   }
   .masthead.ppgsub-heading-title h2{
     justify-content: center;
@@ -485,7 +519,7 @@ header, section {
   color: white;
   font-size: 2rem;
 }
-.masthead h1{
+.masthead .sub-heading,.btn{
   -webkit-animation: jump 2s ease-out;
   -moz-animation: jump 2s ease-out;
   animation: jump s ease-out;
@@ -493,7 +527,7 @@ header, section {
 
 @-webkit-keyframes jump {
 0% {
-  transform: translatey(600px);
+  transform: translatey(100px);
 }
 100% {
   transform: translatey(0px);
@@ -501,11 +535,12 @@ header, section {
 }
 @keyframes jump {
 0% {
-  transform: translatey(600px);
+  transform: translatey(100px);
 }
 100% {
   transform: translatey(0px);
 }
+
 }
 p {
 	margin: 0;
@@ -513,6 +548,7 @@ p {
 
 .nexa {
 	font-family: "Title";
+  font-size: 20px;
 }
 
 .black {
