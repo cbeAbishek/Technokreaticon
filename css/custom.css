@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+DE+Grund&display=swap');
+
+
+
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -20,8 +28,15 @@ body {
 	-o-background-size: cover;
 }
 
-.sub-heading-title {
-	padding: 4em 0 2em 0;
+@media only screen and (min-width: 900px) {
+  .sub-heading-title {
+    padding: 6em 0 2em 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sub-heading-title {
+    padding: 1em 0 2em 0;
+  }
 }
 
 .vertical-padding {
@@ -484,7 +499,8 @@ p {
 
 .masthead h1,
 .title-text {
-  font-family: "Title";
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
   text-align: center;
   opacity: 1;
   background: url("../img/title-scrolling.png");
