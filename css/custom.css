@@ -325,7 +325,9 @@ header, section {
 .schedule h3{
   font-size: 50px;
 }
-
+.d-flex{
+  width: 99%;
+}
 .diagonal-section-content .sub{
   font-size: 50px;
 }
@@ -337,7 +339,7 @@ header, section {
   animation-name: bounce; 
 }
   .navbar-toggler {
-		margin-left: 40%!important;
+		margin-left: 30%!important;
     justify-content: right;
 	}
   nav {
@@ -347,7 +349,6 @@ header, section {
   #navbar-container,
   #navbar-top-menu {
     width: 100%;
-    padding: 0px;
   }
   .masthead.ppgsub-heading-title h2{
     justify-content: center;
