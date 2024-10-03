@@ -101,11 +101,11 @@ header, section {
 
 .img-box {
   display: inline-block;
-  width: 75%;
+  width: 85%;
 }
 
 .top-borders {
-  border-top-right-radius: 1em;
+  border-top-right-radius: 60px;
   border-top-left-radius: 1em;
 }
 
@@ -280,9 +280,15 @@ header, section {
 
 /* ---- Mobile only styling ---- */
 @media (max-width: 990px) {
+  .img-box h6{
+    font-size: 40px;
+  }
   .diagonal-section .nexa {
     font-size: 35px;
     text-align: left;
+  }
+  .masthead{
+    margin-top: 150px;
   }
 	.masthead .title-text {
   font-family: "Archivo Black", sans-serif;
@@ -303,6 +309,10 @@ header, section {
   font-size: 50px;
   
 }
+
+.ppgbadge{
+    visibility: hidden;
+  }
 .event .sub-heading-title{
   font-size: 50px;
 }
@@ -322,7 +332,7 @@ header, section {
   animation-name: bounce; 
 }
   .navbar-toggler {
-		margin-right: 4em!important;
+		margin-left: 3em!important;
 	}
   nav {
     width: 100%;
@@ -360,12 +370,13 @@ header, section {
 
   .navbar-brand {
     display: inline-flex;
+    height: 100px;
+    width: 100px;
   }
 
   #mainNav {
     background-color: transparent;
   }
-
   .navbar {
     padding: 0;
   }
@@ -383,8 +394,8 @@ header, section {
 
   #mainNav .navbar-toggler {
     color: #F0B036;
-    border: 2px solid #ccc;
-    border-radius: 30px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
   }
   
   #mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus {
@@ -446,6 +457,7 @@ header, section {
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid white;
   transition: 0.5s ease-in-out;
+  font-size: 100px;/* menu bar icon size*/
 }
 
 #mainNav.navbar-shrink .nav-link {
@@ -460,10 +472,10 @@ header, section {
 }
 
 .title-icon {
-  width: 64px;
-  height: 64px;
+  width: 84px;
+  height: 84px;
   background: url("../img/icon.png");
-  background-size: 64px 64px;
+  background-size: 84px 84px;
 }
 
 .hidden-anchor {
@@ -706,7 +718,7 @@ p {
   vertical-align: middle;
   font-weight: 900;
   font-size: 1.0rem;
-  width: 250px;
+  width: 220px;
   max-width: 90%;
 }
 
