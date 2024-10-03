@@ -225,7 +225,9 @@ header, section {
   position: relative;
   display: inline;
 }
-
+.masthead .regbtn{
+  font-size:30px;
+}
 .custom-tooltip .custom-tooltiptext {
   visibility: hidden;
   width: 100%;
@@ -306,10 +308,13 @@ header, section {
   padding-top: 15px;
 }
 .masthead .sub-heading{
-  font-size: 50px;
-  
+  font-size: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
+.masthead .container.text-center.regbtn a{
+  font-size: 80px;
+}
 .ppgbadge{
     visibility: hidden;
   }
@@ -332,7 +337,8 @@ header, section {
   animation-name: bounce; 
 }
   .navbar-toggler {
-		margin-left: 3em!important;
+		margin-left: 40%!important;
+    justify-content: right;
 	}
   nav {
     width: 100%;
@@ -419,6 +425,7 @@ header, section {
 
   .btn-primary {
     margin-bottom: 50px !important;
+    
   }
 }
 
