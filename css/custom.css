@@ -101,7 +101,7 @@ header, section {
 
 .img-box {
   display: inline-block;
-  width: 85%;
+  width: 75%;
 }
 
 .top-borders {
@@ -205,6 +205,9 @@ header, section {
   margin: 0;
 }
 
+.team-study {
+}
+
 .team-social {
   padding-bottom: 0.5em;
 }
@@ -264,20 +267,18 @@ header, section {
 	width:10%;
 	z-index:10000
 }
-
 @keyframes bounce { 
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
   40% {transform: translateY(-30px);} 
   60% {transform: translateY(-15px);} 
 }
-
 @-webkit-keyframes bounce { 
   0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
   40% {-webkit-transform: translateY(-30px);} 
   60% {-webkit-transform: translateY(-15px);} 
 } 
 
-/*----Mobile only styling----*/
+/* ---- Mobile only styling ---- */
 @media (max-width: 990px) {
   .diagonal-section .nexa {
     font-size: 35px;
@@ -320,39 +321,18 @@ header, section {
   -webkit-animation-name: bounce;
   animation-name: bounce; 
 }
-.navbar button{
-  size: 80px;
-}
-.ppgbadge{
-  visibility: hidden;
-  
-}
-.navbar .nexa{
-    visibility: hidden;
-  }
-  .navbar-toggler,.nexa {
-		align-items: right;
-    position: fixed;
+  .navbar-toggler {
+		margin-right: 4em!important;
 	}
-
   nav {
     width: 100%;
   }
-  .navbar 
-  #navbar-container,
-  #navbar-top-menu   {
-    margin: 0;
-    padding-bottom: 0px;
-  }
-  .navbar 
-  #navbar-container,
-  #navbar-top-menu .title-icon {
-    object-fit: fill;
-    height: 85px;
-    width: 85px;
-    justify-items: center;
-  }
 
+  #navbar-container,
+  #navbar-top-menu {
+    width: 100%;
+    padding: 0px;
+  }
   .masthead.ppgsub-heading-title h2{
     justify-content: center;
     align-items: center;
@@ -376,17 +356,14 @@ header, section {
   .navbar-toggler {
     align-self: inherit;
     position: initial;
-    
   }
 
   .navbar-brand {
     display: inline-flex;
-    padding-top: 0px;
   }
 
   #mainNav {
     background-color: transparent;
-    height: 10%;
   }
 
   .navbar {
@@ -395,16 +372,11 @@ header, section {
   .navbar-collapse {
     width: 100%;
   }
-  .navbar.title-icon{
-    width: 124px;
-  height: 124px;
-  background: url("../img/icon.png");
-  background-size: 124px 124px;
-  }
+
   .projects-section .project-text {
     padding: 3% !important;
   }
-
+  
   .project-text {
     padding: 3% !important;
   }
@@ -488,11 +460,10 @@ header, section {
 }
 
 .title-icon {
-  width: 94px;
-  height: 94px;
+  width: 64px;
+  height: 64px;
   background: url("../img/icon.png");
-  background-size: 94px 94px;
-  
+  background-size: 64px 64px;
 }
 
 .hidden-anchor {
@@ -573,6 +544,7 @@ header, section {
 100% {
   transform: translatey(0px);
 }
+
 
 }
 p {
