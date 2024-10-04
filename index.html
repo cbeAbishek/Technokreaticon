@@ -147,7 +147,7 @@
 											<img class="img-fluid top-borders" src="img/broch.jpg" alt="">
 										</div>
 										<div class="workshop-item-textbox bottom-borders nexa" style="background: white!important">
-											<h6 style="font-weight: bold; margin: 0.5em">Event Brochure <br> click me download</h6>
+											<h6 style="font-weight: bold; margin: 0.5em">Event Brochure <br> click me for download</h6>
 										</div>
 									</div>
 								</a>
@@ -165,14 +165,17 @@
 									</div>
 								</div>
 							</div>
+							<br>
+							<video unmuted style="border-radius: 20px;">
+								<source src="img/CSE sympo.mp4" type="video/mp4" >
+								Your browser does not support the video tag.
+							  </video>
 						</div>
 					</div>
-				</div>
-				
-			</section>
-			
-			<section class="diagonal-section white-bg">
-			
+				</div>	
+							
+			</section>			
+			<section class="diagonal-section white-bg">			
 				<div class="mx-auto diagonal-section-content">
 					<div class="container nexa">
 						<p class="black bold">Registration is now open! Don’t miss your chance to be part of Techno Kreaticon 2024. <a href="https://ppgit.formaloo.co/ideathonregistration">Click here to register</a>, <a href="#"> our brochure</a>, and share it with your friends. Visit the <a href="https://ppgit.in/">PPG Institute of Technology</a> site to learn more about our college.</p>
@@ -214,6 +217,27 @@
 		<!-- Particle library
 		<script src="particles/particles.js"></script>
 		<script src="particles/app.js"></script> -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const videos = document.querySelectorAll("video");
+
+				const observer = new IntersectionObserver((entries, observer) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.play();
+						} else {
+							entry.target.pause();
+						}
+					});
+				}, {
+					threshold: 0.5 // video should be 50% in view to trigger play
+				});
+
+				videos.forEach(video => {
+					observer.observe(video);
+				});
+			});
+		</script>
 
 	</body>
 

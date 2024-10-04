@@ -290,6 +290,9 @@ header, section {
   .masthead{
     margin-top: 150px;
   }
+  .image-showcase video{
+    width: 740px;
+  }
 	.masthead .title-text {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
