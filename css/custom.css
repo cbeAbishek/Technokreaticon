@@ -354,13 +354,12 @@ header, section {
 	}
 
   nav {
-    width: 600px;
-    justify-content: right;
+    width: 100%;
   }
 
   #navbar-container,
   #navbar-top-menu {
-    width: 600px;
+    width: 100%;
     
   }
  
@@ -480,11 +479,10 @@ header, section {
 }
 
 #mainNav.navbar-shrink {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.005);
   border-bottom: 1px solid white;
-  transition: 0.5s ease-in-out;
-  font-size: 70px;/* menu bar icon size*/
-  justify-content: right;
+  transition: 0.1s ease-in-out;
+  font-size: 120px;/* menu bar icon size*/
 }
 
 #mainNav.navbar-shrink .nav-link {
@@ -499,10 +497,10 @@ header, section {
 }
 
 .title-icon {
-  width: 84px;
-  height: 84px;
+  width: 64px;
+  height: 64px;
   background: url("../img/icon.png");
-  background-size: 84px 84px;
+  background-size: 64px 64px;
 }
 
 .hidden-anchor {
