@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+DE+Grund&display=swap');
 
 
-
-
-
-
-
 body {
   margin: 0;
   padding: 0;
@@ -183,6 +178,38 @@ header, section {
 .col-xl-4 {
   margin-bottom: 1em;
 }
+.video-container {
+  position: relative;
+  display: inline-block;
+  width: 640px; /* Ensure it matches the width of the video */
+  height: 370px; /* Ensure it matches the height of the video */
+}
+
+.video-rounded {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden; /* Ensures video content stays within the top rounded corners */
+}
+
+.video-text {
+  position: absolute;
+  bottom: -16px; /* Aligns the text at the bottom of the video */
+  left: 0; /* You can also use `right: 0` for the bottom right corner */
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.video-text p {
+  margin: 0;
+}
+
 
 .team-card {
   height: 100%;
@@ -288,7 +315,7 @@ header, section {
     text-align: left;
   }
   .masthead{
-    margin-top: 150px;
+    margin-top: 10px;
   }
   
 	.masthead .title-text {
@@ -313,6 +340,7 @@ header, section {
 }
 .masthead .container.text-center.regbtn a{
   font-size: 80px;
+  width: 250px;
 }
 .ppgbadge{
     visibility: hidden;
@@ -349,20 +377,31 @@ header, section {
   -webkit-animation-name: bounce;
   animation-name: bounce; 
 }
-  .navbar-toggler {
-		margin-left: 0%!important; 
-	}
+nav {
+  background-color: #17153a; 
+  justify-content: flex-end; /* Ensures items inside nav are aligned right */
+  text-align: right; /* Ensures text alignment is right */
+}
 
-  nav {
-    width: 100%;
-  }
+#navbar-container, 
+#navbar-top-menu {
+  width: 100%; /* Ensures full-width */
+  justify-content: flex-end; /* Flexbox alignment to the right */
+  background-color: #17153a; /* Background color */
+}
 
-  #navbar-container,
-  #navbar-top-menu {
-    width: 100%;
-    
-  }
- 
+.d-flex {
+  display: flex; /* Makes sure flexbox is applied */
+}
+
+.navbar-toggler {
+  margin-left: auto; /* This will push the button to the right */
+}
+
+.navbar-toggler i {
+  margin-left: auto; /* No need for additional margin here */
+}
+
   .masthead.ppgsub-heading-title h2{
     justify-content: center;
     align-items: center;
@@ -381,6 +420,7 @@ header, section {
   .masthead
   #button-box{
     font-size: 20px;
+    
   }
   .container {
     width: 100%;
@@ -418,10 +458,12 @@ header, section {
 
   #mainNav .navbar-toggler {
     color: #F0B036;
+    display: flex;
+    margin-left: auto; /* Pushes the button to the right */
     border: 0px solid #ccc;
     border-radius: 5px;
-  }
-  
+}
+
   #mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus {
     color: #F0B036;
     border-color: #F0B036;
@@ -479,10 +521,10 @@ header, section {
 }
 
 #mainNav.navbar-shrink {
-  background-color: rgba(0, 0, 0, 0.005);
-  border-bottom: 1px solid white;
-  transition: 0.1s ease-in-out;
-  font-size: 120px;/* menu bar icon size*/
+  transition: 0.5s ease-in-out;
+  font-size: 70px;/* menu bar icon size*/
+  justify-content: right;
+  background-color: #0e0e0e;
 }
 
 #mainNav.navbar-shrink .nav-link {
@@ -652,19 +694,30 @@ p {
 }
 
 /* ---- Button css ---- */
+/* Default button style */
 .btn-primary {
   background-color: rgba(240, 176, 54);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   border-radius: 30px;
   color: black;
   margin: 0 8px;
   font-family: "SubBtnText";
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: none;
-  letter-spacing: 0px;
+  width: auto; /* Ensure it adapts to content by default */
 }
 
+/* Mobile-specific button styles */
+@media (max-width: 768px) {
+  .btn-primary {
+    width: 100%; /* Make the button full width on mobile */
+    font-size: 2rem; /* Increase font size for mobile */
+    padding-top: 1.5rem; /* Increase vertical padding */
+    padding-bottom: 1.5rem;
+    margin: auto;
+  }
+}
 .btn-primary:hover {
   background-color: rgba(240, 176, 54, 0.5);
   color: black;
@@ -840,3 +893,5 @@ p {
 #mainNav.navbar-shrink .nav-link:hover {
     color: rgba(240, 176, 54) !important;
 }
+
+
