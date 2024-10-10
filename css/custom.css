@@ -17,10 +17,10 @@ body {
 	background-color: #17153a; 
 	background-image: url(""); 
 	background-repeat: no-repeat; 
-	background-size: cover; 
+	-o-background-size: cover; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
+	background-size: cover;
 }
 
 .vertical-padding {
@@ -31,9 +31,9 @@ body {
 	z-index: 30; 
 	position: relative;
 	opacity: 0.9;
-	transform: skewY(-2deg); 
+	-webkit-transform: skewY(-2deg); 
 	-ms-transform: skewY(-2deg); 
-	-webkit-transform: skewY(-2deg);
+	transform: skewY(-2deg);
 }
 
 .footer-section {
@@ -61,9 +61,9 @@ body {
 
 .diagonal-section-content {
 	padding: 5em 0 5em 0; 
-	transform: skewY(2deg); 
+	-webkit-transform: skewY(2deg); 
 	-ms-transform: skewY(2deg); 
-	-webkit-transform: skewY(2deg);
+	transform: skewY(2deg);
 }
 
 header, section {
@@ -216,15 +216,15 @@ header, section {
 }
 
 .team-image {
-  border-top-right-radius: 3em;
-  border-top-left-radius: 3em;
+  border-top-right-radius:8em;
+  border-top-left-radius: 2em;
 }
 
 .team-textbox {
   height: auto;
   background: black;
-  border-bottom-right-radius: 3em;
-  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
 }
 
 .team-name {
