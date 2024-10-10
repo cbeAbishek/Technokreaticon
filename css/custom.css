@@ -435,7 +435,7 @@ nav {
     display: inline-flex;
     height: 100px;
     width: 100px;
-    visibility: hidden;
+    /*visibility: hidden;*/
   }
 
   #mainNav {
