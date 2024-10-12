@@ -219,6 +219,9 @@ header, section {
   border-top-right-radius:8em;
   border-top-left-radius: 2em;
 }
+.team-image img{
+  width: 100%;
+}
 
 .team-textbox {
   height: auto;
