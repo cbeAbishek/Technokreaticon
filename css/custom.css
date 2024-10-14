@@ -388,7 +388,6 @@ nav {
 
 #navbar-container, 
 #navbar-top-menu {
-  height: 130px;
   width: 100%; /* Ensures full-width */
   justify-content: flex-end; /* Flexbox alignment to the right */
   background-color: #17153a; /* Background color */
