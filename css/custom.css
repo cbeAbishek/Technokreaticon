@@ -605,6 +605,7 @@ nav {
   font-size: 2rem;
 }
 .masthead .sub-heading,.btn,.ppgsub-heading{
+  text-align: center;
   -webkit-animation: jump 2s ease-out;
   -moz-animation: jump 2s ease-out;
   animation: jump 2s ease-out;
